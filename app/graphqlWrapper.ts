@@ -2,7 +2,7 @@ import { DocumentNode, print } from 'graphql';
 import { getSdk } from './generated/graphql';
 import { sessionStorage } from './sessions';
 
-const DEMO_API_URL = 'https://shop.synsystems.eu/shop-api';
+const DEMO_API_URL = 'https://shop.synsystems.eu/shop-api?vendure-token=n7jfok6vokzllb4joebn';
 const API_URL =
     typeof process !== 'undefined'
         ? process.env.VENDURE_API_URL ?? DEMO_API_URL
